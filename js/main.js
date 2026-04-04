@@ -17,13 +17,5 @@ document.addEventListener('click', function (event) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('.contact-form form');
-
-  if (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      alert('Thank you for contacting Northern Desert Mechanical. This demo form is ready to be connected to your preferred email or backend service.');
-      form.reset();
-    });
-  }
+  // Netlify handles form submission - no JS needed
 });
