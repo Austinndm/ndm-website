@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Northern Desert Mechanical, its shop, service fleet, heavy-duty repair focus, and commercial support capabilities across Nevada.">
+  <title>About | Northern Desert Mechanical</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-text">Northern Desert <span class="logo-accent">Mechanical</span></div>
+      </a>
+      <nav>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about-hero">
+    <div class="container">
+      <h1>A commercial repair operation built for heavy-duty work</h1>
+      <p class="hero-subtitle">Northern Desert Mechanical exists to serve operators who depend on diesel equipment, working fleets, and mechanically reliable assets to stay productive.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>What NDM does</h2>
+          <p>Northern Desert Mechanical focuses on B2B maintenance and repair for commercial and industrial customers. The work ranges from routine preventive maintenance to major mechanical repairs, including engine changes and heavy-duty diagnostics.</p>
+          <p>Unlike light-duty automotive shops, NDM is oriented around the demands of working equipment. That means understanding downtime pressure, fleet scheduling, industrial jobsite realities, and the need for practical repair decisions.</p>
+          <p>Its strongest specialty is charter bus repair, supported by broader capability across over-the-road semis, industrial support equipment, diesel-powered site assets, and general equipment repairs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Why clients work with NDM</h3>
+          <p>Commercial customers need a shop that can do more than handle basic service tickets.</p>
+          <ul style="list-style:none; margin-top:1rem;">
+            <li style="padding:0.5rem 0; color:var(--text-light);">• Heavy-duty mindset and real mechanical capability</li>
+            <li style="padding:0.5rem 0; color:var(--text-light);">• Support for both scheduled maintenance and major repairs</li>
+            <li style="padding:0.5rem 0; color:var(--text-light);">• Shop infrastructure plus field service resources</li>
+            <li style="padding:0.5rem 0; color:var(--text-light);">• Experience aligned with commercial uptime requirements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gray">
+    <div class="container">
+      <div class="text-center mb-2">
+        <h2>Shop and fleet capability</h2>
+        <p>NDM combines a physical shop with mobile service assets sized for different levels of field support.</p>
+      </div>
+      <div class="fleet-grid">
+        <div class="fleet-item">
+          <h4>Dedicated Shop</h4>
+          <p>A service base for inspections, scheduled maintenance, and larger mechanical repairs requiring controlled shop work.</p>
+        </div>
+        <div class="fleet-item">
+          <h4>Fully Equipped Service Trucks</h4>
+          <p>Mobile field support for inspections, diagnostics, maintenance, and on-site repair response across a wide range of commercial equipment.</p>
+        </div>
+        <div class="fleet-item">
+          <h4>Heavy Field Capability</h4>
+          <p>Expanded support for demanding repair situations that require more tools, parts handling, and dependable on-site service capability.</p>
+        </div>
+        <div class="fleet-item">
+          <h4>Crane Truck Support</h4>
+          <p>Added lifting and handling capability for heavier components, more complex field repairs, and jobs that require crane-assisted service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-2">
+        <h2>Industries served</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Transportation</h3>
+          <p>Charter bus operators, fleet owners, and heavy truck clients who need dependable mechanical support.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mining</h3>
+          <p>Sites relying on pump engines, light plants, and other support equipment that needs to stay ready for work.</p>
+        </div>
+        <div class="service-card">
+          <h3>Industrial Operations</h3>
+          <p>Commercial customers with diesel-powered equipment and support machinery critical to ongoing operations.</p>
+        </div>
+        <div class="service-card">
+          <h3>Contractors & Equipment Owners</h3>
+          <p>Businesses that need competent repair work for heavy-duty assets, not consumer-grade service processes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="text-center">
+        <h2>Professional, capable, and built for real operations</h2>
+        <p>NDM’s value is straightforward: the right equipment, the right mechanical mindset, and support that fits commercial realities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-2">
+        <h2>Service Area</h2>
+        <p>Based in Spring Creek, NDM serves commercial operators across northern Nevada — including Reno, Elko, Ely, Winnemucca, and Battle Mountain.</p>
+      </div>
+      <div id="service-map" class="service-area-map"></div>
+      <div class="map-legend">
+        <div class="map-legend-item">
+          <span class="map-legend-dot shop"></span>
+          <span>NDM Shop Location</span>
+        </div>
+        <div class="map-legend-item">
+          <span class="map-legend-dot service-area"></span>
+          <span>Field Service Range</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Need a reliable heavy-duty service partner?</h2>
+      <p>Reach out to Northern Desert Mechanical to discuss fleet support, bus repairs, or industrial equipment service.</p>
+      <a href="contact.html" class="btn btn-secondary">Contact NDM</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Northern Desert Mechanical</h3>
+          <p>Commercial diesel, fleet, bus, and industrial equipment maintenance and repair in Nevada.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:service@ndmnv.com">service@ndmnv.com</a></li>
+            <li><a href="tel:+17754011211">(775) 401-1211</a></li>
+            <li>1217 B Solar West Dr</li>
+            <li>Spring Creek, NV 89815</li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Domain</h4>
+          <ul>
+            <li><a href="https://ndmnv.com">ndmnv.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Northern Desert Mechanical. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const map = L.map('service-map').setView([40.5, -116.5], 6);
+      
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+      
+      // Shop location
+      const shopLocation = [40.4587, -115.5869];
+      
+      L.marker(shopLocation)
+        .addTo(map)
+        .bindPopup('<b>Northern Desert Mechanical</b><br>1217 B Solar West Dr<br>Spring Creek, NV 89815');
+      
+      // Service area covering all of northern Nevada
+      L.circle(shopLocation, {
+        color: '#d4652a',
+        fillColor: '#d4652a',
+        fillOpacity: 0.12,
+        radius: 350000 // ~220 miles - covers Reno, Ely, Winnemucca, Battle Mountain
+      }).addTo(map);
+      
+      // Reference cities
+      const cities = [
+        { name: 'Reno', coords: [39.5296, -119.8138] },
+        { name: 'Ely', coords: [39.0282, -114.8903] },
+        { name: 'Winnemucca', coords: [40.9726, -117.7354] },
+        { name: 'Battle Mountain', coords: [40.6371, -116.9393] },
+        { name: 'Elko', coords: [40.8324, -115.7631] }
+      ];
+      
+      cities.forEach(city => {
+        L.circleMarker(city.coords, {
+          radius: 4,
+          color: '#666',
+          fillColor: '#999',
+          fillOpacity: 0.7,
+          weight: 1
+        }).addTo(map).bindTooltip(city.name, { permanent: false });
+      });
+    });
+  </script>
+</body>
+</html>
