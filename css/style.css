@@ -612,6 +612,71 @@ nav a:hover, nav a.active {
   color: var(--text-white);
 }
 
+/* Featured Testimonial */
+.featured-testimonial {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  color: var(--text-white);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.featured-testimonial-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-mark {
+  font-size: 5rem;
+  color: var(--accent);
+  opacity: 0.5;
+  font-family: Georgia, serif;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.featured-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.featured-highlight {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.featured-author {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.featured-author h4 {
+  color: var(--text-white);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.featured-author p {
+  color: var(--accent);
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .featured-text {
+    font-size: 1rem;
+  }
+  
+  .featured-testimonial {
+    padding: 3rem 0;
+  }
+}
+
 /* Footer */
 footer {
   background: var(--primary);
